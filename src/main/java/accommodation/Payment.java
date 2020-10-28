@@ -33,13 +33,14 @@ public class Payment {
             BeanUtils.copyProperties(this, paymentCompleted);
             paymentCompleted.publishAfterCommit();
 
+            /*
             try {
                 Thread.currentThread().sleep((long) (400 + Math.random() * 220));
                 System.out.println("=============결재 승인 완료=============");
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
-
+            */
         }
     }
     
